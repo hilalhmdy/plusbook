@@ -1,14 +1,15 @@
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\Plusbook.exe.config
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\Plusbook.exe
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\Plusbook.pdb
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.dll
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.Drawing.dll
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.WpfGraphControl.dll
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.csprojAssemblyReference.cache
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.Properties.Resources.resources
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.GenerateResource.cache
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CopyComplete
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.exe
-C:\Users\Lenovo\Documents\ITB\IF Semester 4\IF2211 Strategi Algoritma\Tugas\Tugas Besar 2 (plusbook)\Plusbook\Plusbook\obj\Debug\Plusbook.pdb
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.exe.config
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.exe
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.pdb
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.dll
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.Drawing.dll
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.WpfGraphControl.dll
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csprojAssemblyReference.cache
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.Form1.resources
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.Properties.Resources.resources
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.GenerateResource.cache
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CoreCompileInputs.cache
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CopyComplete
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.exe
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.pdb
