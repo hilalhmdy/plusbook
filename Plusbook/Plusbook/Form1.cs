@@ -35,8 +35,18 @@ namespace Plusbook
         }
 
         // helper method
-        private void populate_profile_list(string raw_string)
+        private void populate_profile_list(string[] lines)
         {
+
+            int num_rel = Int32.Parse(lines[0]);
+            for (int i=0; i<num_rel; i++)
+            {
+                string[] temp = lines[i + 1].Split(' ');
+                profile_list.addConnection(temp[0], temp[1]);
+                profile_list.addFriendshipList(temp[0], temp[1]);
+            }
+
+            /*
             char[] delims = { ' ', '\r', '\n' };
             string[] d_arr = raw_string.Split(delims, StringSplitOptions.RemoveEmptyEntries);
             int i = 0;
@@ -49,6 +59,7 @@ namespace Plusbook
                 }
                 i++;
             }
+            */
         }
         private void fill_dropdowns()
         {
@@ -73,28 +84,49 @@ namespace Plusbook
             graph_viewer.Graph = graph;
 
         }
-        private string get_friend_recommendations(string a, string b)
+        private string get_friend_recommendations(string a)
         {
-            if (a=="" || b == "")
+            if (a=="")
             {
                 return "";
             }
-            string s = "Rekomendasi teman untuk "+a+":\n";
+            string s = "===------------------------------------------\nRekomendasi teman untuk "+a+":\n------------------------------------------===\n\n";
             Profile A = profile_list.getProfile(a);
-            Profile B = profile_list.getProfile(b);
-            foreach (var friend_a in A.getFriendList())
+            List<Profile> friends_a = A.getFriendList();
+            List<Profile> selected_tracker = new List<Profile>();
+            foreach (Profile b in friends_a)
             {
-                foreach (var friend_b in B.getFriendList())
+                List<Profile> friends_b = b.getFriendList();
+                foreach (Profile c in friends_b)
                 {
-                    if ( !(friend_a.getName().Equals(b) || friend_b.getName().Equals(a)))
+                    Profile selected = null;
+                    if (!(c.Equals(A)) && !(friends_a.Contains(c)))
                     {
-                        if (friend_a.getName().Equals(friend_b.getName()))
+                        selected = c;
+                    }
+                    if (selected != null && !(selected_tracker.Contains(selected)))
+                    {
+                        selected_tracker.Add(selected);
+                        List<Profile> friends_sel = new List<Profile>();
+                        foreach (Profile d in selected.getFriendList())
                         {
-                            s = s + " - " + friend_b.getName() + "\n";
+                            if (friends_a.Contains(d))
+                            {
+                                friends_sel.Add(d);
+                            }
                         }
+                        int n_mutual = friends_sel.Count;
+                        s = s + selected.getName() + ": " + n_mutual.ToString() + " mutual friends\n";
+                        foreach (Profile m in friends_sel)
+                        {
+                            s = s + " - " + m.getName() + "\n";
+                        }
+                        s += "\n";
+
                     }
                 }
             }
+
             return s;
         }
 
@@ -104,9 +136,8 @@ namespace Plusbook
             {
                 selected_filename_label.Text = ofd.SafeFileName;
                 path = ofd.FileName;
-                StreamReader stream = new StreamReader(path);
-                string raw_string = stream.ReadToEnd().ToString();
-                populate_profile_list(raw_string);
+                string[] lines = File.ReadAllLines(path);
+                populate_profile_list(lines);
                 fill_dropdowns();
                 draw_graph();
                 
@@ -116,8 +147,10 @@ namespace Plusbook
 
         private void process_button_Click(object sender, EventArgs e)
         {
+
             string result = "";
-            result += get_friend_recommendations(start_profile_dropdown.Text, end_profile_dropdown.Text);
+            result += get_friend_recommendations(start_profile_dropdown.Text);
+            result_textbox.Text = result;
         }
     }
 }
