@@ -6,10 +6,10 @@ D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Deb
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.WpfGraphControl.dll
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csprojAssemblyReference.cache
-D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.Form1.resources
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.Properties.Resources.resources
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.GenerateResource.cache
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CoreCompileInputs.cache
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CopyComplete
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.exe
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.pdb
+D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.plusbook_form.resources

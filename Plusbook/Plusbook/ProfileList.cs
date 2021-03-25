@@ -4,20 +4,50 @@ using System.Collections.Generic;
 public class ProfileList
 {
 	private List<Profile> profiles;
+    private List<List<string>> friendshipList;
 	
 	public ProfileList()
 	{
 		this.profiles = new List<Profile>();
-	}
+        this.friendshipList = new List<List<string>>();
+
+    }
 	public ProfileList(ProfileList Other)
 	{
 		this.profiles = new List<Profile>();
-		foreach (var Prof in Other.profiles) {
+		foreach (var Prof in Other.getProfiles()) {
 			this.profiles.Add(Prof);
 		}
-	}
+        this.friendshipList = new List<List<string>>();
+        foreach (var friendship in Other.getFriendshipList())
+        {
+            List<string> temp = new List<string>();
+            temp.Add(friendship[0]);
+            temp.Add(friendship[1]);
 
-	public void addProfile(string Name)
+            this.friendshipList.Add(temp);
+        }
+
+    }
+
+    public List<Profile> getProfiles()
+    {
+        return this.profiles;
+    }
+    public List<List<string>> getFriendshipList()
+    {
+        return this.friendshipList;
+    }
+
+    public void addFriendshipList(string a, string b)
+    {
+        List<string> new_friendship = new List<string>();
+        new_friendship.Add(a);
+        new_friendship.Add(b);
+        this.friendshipList.Add(new_friendship);
+    }
+
+    public void addProfile(string Name)
 	{
 		Profile newProfile = new Profile(Name);
 		this.profiles.Add(newProfile);
