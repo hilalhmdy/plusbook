@@ -165,15 +165,7 @@ namespace Plusbook
 
         private bool path_found(List<List<string>> a, string b)
         {
-            foreach (var Path in a)
-            {
-                if (Path.LastOrDefault() == b)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return a[0].LastOrDefault() == b;
         }
 
         private bool list_nodes_empty(List<List<string>> a)
@@ -273,7 +265,7 @@ namespace Plusbook
             }
         }
 
-        private string get_explore_friend_dfs(string a, string b)
+        private string get_explore_friends_dfs(string a, string b)
         {
             List<List<string>> himp_solusi = new List<List<string>>();
             List<string> himp_checked = new List<string>();
@@ -286,21 +278,18 @@ namespace Plusbook
             himp_solusi.AddRange(get_path(initial));
             himp_checked.Add(a);
 
-            int pencarianawal = 0;
-            int pencarianakhir = himp_solusi.Length;
-            
             while (!path_found(himp_solusi, b) && !list_nodes_empty(himp_solusi))
             {
-                for (pencarianawal ; pencarianawal < pencarianakhir; pencarianawal++) 
-                { 
-                        
-                    List<string> stack = himp_solusi .LastOrDefault();
-                    List<List<string>> temp = get_path(stack);
-                    himp_solusi.AddRange(temp);
-                    himp_checked.Add(stack.FirstOrDefault());
-                    himp_solusi.Remove(stack);
-                }
+                List<string> liveNode = himp_solusi.FirstOrDefault();
+
+                List<List<string>> temp = get_path(liveNode);
+                clean_paths(temp, himp_checked);
+                himp_solusi.InsertRange(0, temp);
+
+                himp_checked.Add(liveNode.LastOrDefault());
+                himp_solusi.Remove(liveNode);
             }
+
             if (path_found(himp_solusi, b))
             {
                 List<string> final = get_final_path(himp_solusi, b);
@@ -377,6 +366,10 @@ namespace Plusbook
             }
             result += "\n";
             result += get_friend_recommendations(start_profile_dropdown.Text);
+<<<<<<< HEAD
+=======
+            result += get_explore_friends_dfs(start_profile_dropdown.Text, end_profile_dropdown.Text);
+>>>>>>> fe98fc55e7605194b26054a549c86e9d8076fa0e
             result_textbox.Text = result;
         }
     }
