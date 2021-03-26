@@ -165,7 +165,14 @@ namespace Plusbook
 
         private bool path_found(List<List<string>> a, string b)
         {
-            return a[0].LastOrDefault() == b;
+            foreach (var x in a)
+            {
+                if (x.Contains(b))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private bool list_nodes_empty(List<List<string>> a)
@@ -221,6 +228,7 @@ namespace Plusbook
 
             if (path_found(himp_solusi, b))
             {
+                Console.WriteLine("ADA");
                 List<string> final = get_final_path(himp_solusi, b);
                 int degree = final.Count - 2;
 
@@ -261,7 +269,8 @@ namespace Plusbook
             }
             else
             {
-                return result += "Tidak ada jalur koneksi yang tersedia\nAnda harus memulai koneksi baru itu sendiri.";
+                Console.WriteLine("Tidak Ada!");
+                return result += "Tidak ada jalur koneksi yang tersedia\nAnda harus memulai koneksi baru itu sendiri.\n";
             }
         }
 
@@ -332,7 +341,7 @@ namespace Plusbook
             }
             else
             {
-                return result += "Tidak ada jalur koneksi yang tersedia\nAnda harus memulai koneksi baru itu sendiri.";
+                return result += "Tidak ada jalur koneksi yang tersedia\nAnda harus memulai koneksi baru itu sendiri.\n";
             }
         }
 
@@ -364,12 +373,17 @@ namespace Plusbook
                     result = get_explore_friends_bfs(a, b);
                 }
             }
+            if (dfs_radio.Checked)
+            {
+                string a = start_profile_dropdown.Text;
+                string b = end_profile_dropdown.Text;
+                if (!(a.Equals("") || b.Equals("")))
+                {
+                    result = get_explore_friends_dfs(a, b);
+                }
+            }
             result += "\n";
             result += get_friend_recommendations(start_profile_dropdown.Text);
-<<<<<<< HEAD
-=======
-            result += get_explore_friends_dfs(start_profile_dropdown.Text, end_profile_dropdown.Text);
->>>>>>> fe98fc55e7605194b26054a549c86e9d8076fa0e
             result_textbox.Text = result;
         }
     }
