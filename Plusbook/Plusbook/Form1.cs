@@ -273,6 +273,80 @@ namespace Plusbook
             }
         }
 
+        private string get_explore_friend_dfs(string a, string b)
+        {
+            List<List<string>> himp_solusi = new List<List<string>>();
+            List<string> himp_checked = new List<string>();
+            List<string> initial = new List<string>();
+
+            string result = "===------------------------------------------\nEksplorasi teman dari " + a + " ke " + b + ":\n------------------------------------------===\n\n";
+            result += "Nama akun: " + a + " dan " + b + "\n";
+
+            initial.Add(a);
+            himp_solusi.AddRange(get_path(initial));
+            himp_checked.Add(a);
+
+            int pencarianawal = 0;
+            int pencarianakhir = himp_solusi.Length;
+            
+            while (!path_found(himp_solusi, b) && !list_nodes_empty(himp_solusi))
+            {
+                for (pencarianawal ; pencarianawal < pencarianakhir; pencarianawal++) 
+                { 
+                        
+                    List<string> stack = himp_solusi .LastOrDefault();
+                    List<List<string>> temp = get_path(stack);
+                    himp_solusi.AddRange(temp);
+                    himp_checked.Add(stack.FirstOrDefault());
+                    himp_solusi.Remove(stack);
+                }
+            }
+            if (path_found(himp_solusi, b))
+            {
+                List<string> final = get_final_path(himp_solusi, b);
+                int degree = final.Count - 2;
+
+                if (degree == 0)
+                {
+                    result += "0th-degree connection. Sudah teman\n";
+                }
+                else if (degree == 1)
+                {
+                    result += "1st-degree connection\n";
+                }
+                else if (degree == 2)
+                {
+                    result += "2nd-degree connection\n";
+                }
+                else if (degree == 3)
+                {
+                    result += "3rd-degree connection\n";
+                }
+                else
+                {
+                    result += degree + "th-degree connection\n";
+                }
+
+                for (int i = 0; i < final.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        result += final[i];
+                    }
+                    else
+                    {
+                        result += " → " + final[i];
+                    }
+                }
+
+                return result += "\n";
+            }
+            else
+            {
+                return result += "Tidak ada jalur koneksi yang tersedia\nAnda harus memulai koneksi baru itu sendiri.";
+            }
+        }
+
         private void browse_button_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)

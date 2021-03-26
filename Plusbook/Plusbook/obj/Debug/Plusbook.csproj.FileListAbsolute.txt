@@ -13,3 +13,18 @@ D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Deb
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.exe
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.pdb
 D:\Data\college\Kuliah\Semester 4\Stima\Tubes\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.plusbook_form.resources
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.exe.config
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.exe
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\Plusbook.pdb
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.dll
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\AutomaticGraphLayout.Drawing.dll
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\bin\Debug\Microsoft.Msagl.WpfGraphControl.dll
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csprojAssemblyReference.cache
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.plusbook_form.resources
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.Properties.Resources.resources
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.GenerateResource.cache
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CoreCompileInputs.cache
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.csproj.CopyComplete
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.exe
+D:\TUBES\STIMA2\plusbook\Plusbook\Plusbook\obj\Debug\Plusbook.pdb
