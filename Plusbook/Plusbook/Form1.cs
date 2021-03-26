@@ -292,8 +292,17 @@ namespace Plusbook
         {
 
             string result = "";
+            if (bfs_radio.Checked)
+            {
+                string a = start_profile_dropdown.Text;
+                string b = end_profile_dropdown.Text;
+                if(!(a.Equals("") || b.Equals("")))
+                {
+                    result = get_explore_friends_bfs(a, b);
+                }
+            }
+            result += "\n";
             result += get_friend_recommendations(start_profile_dropdown.Text);
-            result += get_explore_friends_bfs(start_profile_dropdown.Text, end_profile_dropdown.Text);
             result_textbox.Text = result;
         }
     }
